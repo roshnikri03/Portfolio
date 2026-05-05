@@ -10,6 +10,12 @@
 <body>
 
     <!-- ============================================================
+         DAY / NIGHT TOGGLE (CSS-only, no JavaScript)
+         The checkbox drives the theme via :has() selector in CSS.
+    ============================================================ -->
+    <input type="checkbox" id="theme-toggle" class="theme-checkbox" aria-label="Toggle dark mode">
+
+    <!-- ============================================================
          TASK 2: HEADER — Semantic header, logo, navigation, toggle
     ============================================================ -->
     <header id="header">
@@ -112,6 +118,58 @@
             <div class="home-image">
                 <div class="profile-img-wrapper">
                     <img src="images/abc.jpeg" alt="Roshni Kumari - Software Developer" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         TASK 4: ABOUT SECTION
+         Heading, about content, profile image, read more button
+    ============================================================ -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <div class="about-grid">
+                <!-- About Image -->
+                <div class="about-image">
+                    <img src="images/abc.jpeg" alt="Roshni Kumari" class="about-img">
+                </div>
+
+                <!-- About Content -->
+                <div class="about-content">
+                    <h3>Software Developer &amp; CS Graduate</h3>
+                    <p>
+                        I'm Roshni Kumari, a B.Tech graduate in Computer Science &amp; Engineering
+                        from the National Institute of Technology, Patna (7.69 CGPA). I am passionate
+                        about building high-performance, scalable, and user-centric software solutions.
+                    </p>
+
+                    <!-- Read More mechanism: pure CSS checkbox hack -->
+                    <input type="checkbox" id="read-more-toggle" class="read-more-checkbox">
+                    <div class="read-more-content">
+                        <p>
+                            During my internship at <strong>Continue (Temple)</strong> as a Software Developer Intern
+                            (Jan 2025 – June 2025), I worked with cross-functional teams to deliver scalable
+                            healthcare applications using <strong>Swift</strong> and <strong>SwiftUI</strong>.
+                            I integrated secure RESTful APIs for real-time patient data and focused heavily on
+                            clean architecture, modular design, and performance optimization.
+                        </p>
+                        <p>
+                            My technical expertise spans <strong>Python, C/C++, JavaScript, React, Node.js,
+                                FastAPI, PostgreSQL, MongoDB</strong>, and more. I love solving complex problems —
+                            from building recommendation systems with knowledge graphs to crafting responsive
+                            e-commerce platforms with Redux and Redis caching.
+                        </p>
+                        <p>
+                            Beyond coding, I served as <strong>Content &amp; Media Coordinator at GDSC NIT
+                                Patna</strong>,
+                            leading developer community initiatives. I'm a <strong>CodeChef 2-Star</strong> rated
+                            programmer and hold a <strong>Certificate of Excellence in Frontend Development</strong>
+                            from Coding Ninjas.
+                        </p>
+                    </div>
+                    <label for="read-more-toggle" class="btn btn-secondary read-more-btn">Read More</label>
                 </div>
             </div>
         </div>
