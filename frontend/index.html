@@ -327,6 +327,188 @@
         </div>
     </section>
 
+    <!-- ============================================================
+         TASK 7: PROJECTS SECTION
+         Heading, 7 interactive & responsive project cards
+    ============================================================ -->
+    <section id="services" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Services</span></h2>
+            <div class="projects-grid">
+
+                <!-- Project Card 1 -->
+                <article class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-front">
+                            <div class="project-icon">&#128722;</div>
+                            <h3>Scalable E-Commerce App</h3>
+                        </div>
+                        <div class="project-back">
+                            <h3>Scalable E-Commerce App</h3>
+                            <p>Built with Python, FastAPI, React, Redux, PostgreSQL &amp; Redis.
+                                Features scalable product, user, and order management with caching.</p>
+                            <span class="project-tags">Python · React · FastAPI</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 2 -->
+                <article class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-front">
+                            <div class="project-icon">&#129504;</div>
+                            <h3>Learning Path Recommender</h3>
+                        </div>
+                        <div class="project-back">
+                            <h3>Learning Path Recommender</h3>
+                            <p>Intelligent recommendation system using knowledge graphs, Neo4j,
+                                and genetic algorithms. Improved accuracy by 12%.</p>
+                            <span class="project-tags">Python · Neo4j · ML</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 3 -->
+                <article class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-front">
+                            <div class="project-icon">&#127973;</div>
+                            <h3>Healthcare App (Temple)</h3>
+                        </div>
+                        <div class="project-back">
+                            <h3>Healthcare App (Temple)</h3>
+                            <p>Scalable healthcare application with Swift &amp; SwiftUI. Integrated
+                                RESTful APIs for real-time patient vital data with clean architecture.</p>
+                            <span class="project-tags">Swift · SwiftUI · REST API</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 4 -->
+                <article class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-front">
+                            <div class="project-icon">&#128187;</div>
+                            <h3>Portfolio Website</h3>
+                        </div>
+                        <div class="project-back">
+                            <h3>Portfolio Website</h3>
+                            <p>A responsive single-page portfolio showcasing skills, projects, and
+                                certifications with CSS animations and day/night toggle.</p>
+                            <span class="project-tags">HTML · CSS · Responsive</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 5 -->
+                <article class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-front">
+                            <div class="project-icon">&#128279;</div>
+                            <h3>RESTful API Integration</h3>
+                        </div>
+                        <div class="project-back">
+                            <h3>RESTful API Integration</h3>
+                            <p>Designed secure RESTful APIs to ingest, process, and display real-time
+                                data ensuring accuracy, reliability, and scalability.</p>
+                            <span class="project-tags">FastAPI · REST · Python</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 6 -->
+                <article class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-front">
+                            <div class="project-icon">&#128202;</div>
+                            <h3>Graph-Based Learning Optimizer</h3>
+                        </div>
+                        <div class="project-back">
+                            <h3>Graph-Based Learning Optimizer</h3>
+                            <p>Implemented graph-based learning path optimization to personalize
+                                educational content recommendations using knowledge graphs.</p>
+                            <span class="project-tags">Python · Graphs · Neo4j</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 7 -->
+                <article class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-front">
+                            <div class="project-icon">&#128274;</div>
+                            <h3>Auth &amp; Role-Based Access</h3>
+                        </div>
+                        <div class="project-back">
+                            <h3>Auth &amp; Role-Based Access</h3>
+                            <p>Secure authentication and authorization using JWT-based access control,
+                                ensuring role-based access for users and admins.</p>
+                            <span class="project-tags">JWT · Node.js · Security</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         TASK 8: CONTACT SECTION
+         Heading, name + email + message inputs, submit button
+    ============================================================ -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact <span class="highlight">Me</span></h2>
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit-btn">Send Message &#10148;</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         TASK 9: FOOTER
+         Semantic footer, call & email buttons with hover effects
+    ============================================================ -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <a href="#home" class="footer-logo">RK<span class="logo-dot">.</span></a>
+                <p class="footer-tagline">Building the future, one line of code at a time.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <!-- Call & Email Buttons -->
+            <div class="footer-buttons">
+                <a href="tel:+917739161619" class="btn btn-footer" id="call-btn">
+                    &#128222; Call Me
+                </a>
+                <a href="mailto:roshnikumari90403@gmail.com" class="btn btn-footer" id="email-btn">
+                    &#9993; Email Me
+                </a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Roshni Kumari. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
     
 </body>
 </html>
